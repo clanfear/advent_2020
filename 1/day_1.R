@@ -1,4 +1,4 @@
-input_vec <- read.table("./input.txt")[,1]
+input_vec <- read.table("./1/input.txt")[,1]
 
 # Find product of pair of numbers that sum to 2020
 
