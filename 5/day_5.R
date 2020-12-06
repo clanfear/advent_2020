@@ -1,9 +1,3 @@
-# 128 rows, 0 through 127
-# 8 columns, 0 through 7
-# Letter is half of region
-# Codes are 10 character, 7 for row, 3 for column
-# Seat ideas are row*8 + column
-
 # Part 1
 
 input <- readLines("./5/input.txt")
