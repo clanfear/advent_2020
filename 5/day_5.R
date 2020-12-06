@@ -12,7 +12,7 @@ rownames(seat_mat) <- row_ind
 # Function to halve matrices
 
 get_half <- function(mat, x){
-  if(x=="F") return(mat[1:(.5*nrow(mat)), ,drop=FALSE])
+  if(x=="F") return(mat[1:(.5*nrow(mat)), , drop=FALSE])
   if(x=="B") return(mat[(1 + .5*nrow(mat)):nrow(mat), , drop=FALSE])
   if(x=="L") return(mat[ , 1:(.5*ncol(mat)), drop=FALSE])
   if(x=="R") return(mat[ , (1 + .5*ncol(mat)):ncol(mat), drop=FALSE])
