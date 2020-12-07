@@ -28,6 +28,6 @@ length(unique(growing_vec))
 get_bags_count <- function(bag){
   current_bags <- bags[bags$bag == bag,]
   bag_count    <- 1 + unlist(lapply(current_bags$contents, get_bags_count))
-  sum(current_bags$n_bags * bag_count)
+  return(sum(current_bags$n_bags * bag_count))
 }
 get_bags_count("shiny gold")
